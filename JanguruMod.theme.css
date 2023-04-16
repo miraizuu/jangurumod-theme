@@ -1,0 +1,175 @@
+/**
+* @name Janguru Mod
+* @author Slav Waifu#1763
+* @description Part of the Janguru Theme (Nocturnal edit)
+* @version 1.0.0
+*/
+@import url("https://codedotspectra.github.io/themes/themes-cores/nocturnal.css");
+/*
+  ____________________________________________________________________________________________________________________________________
+ /                                                                                                                                    \
+|                                    /$$$$$  /$$$$$$  /$$   /$$  /$$$$$$  /$$   /$$ /$$$$$$$  /$$   /$$                                |
+|                                   |__  $$ /$$__  $$| $$$ | $$ /$$__  $$| $$  | $$| $$__  $$| $$  | $$                                |
+|                                      | $$| $$  \ $$| $$$$| $$| $$  \__/| $$  | $$| $$  \ $$| $$  | $$                                |
+|                                      | $$| $$$$$$$$| $$ $$ $$| $$ /$$$$| $$  | $$| $$$$$$$/| $$  | $$                                |
+|                                 /$$  | $$| $$__  $$| $$  $$$$| $$|_  $$| $$  | $$| $$__  $$| $$  | $$                                |
+|                                | $$  | $$| $$  | $$| $$\  $$$| $$  \ $$| $$  | $$| $$  \ $$| $$  | $$                                |
+|                                |  $$$$$$/| $$  | $$| $$ \  $$|  $$$$$$/|  $$$$$$/| $$  | $$|  $$$$$$/                                |
+|                                 \______/ |__/  |__/|__/  \__/ \______/  \______/ |__/  |__/ \______/                                 |
+ \____________________________________________________________________________________________________________________________________/
+*/
+@import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
+@import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
+@import url("https://codedotspectra.github.io/themes/core/badges.css");
+
+@import url("https://codedotspectra.github.io/themes/core/hljs.css"); /* Better Hljs */
+@import url("https://discordstyles.github.io/RadialStatus/base.css"); /* Radial Status */
+:root {
+  --backgroundColor01: #222222;
+  --backgroundColor02: #171717;
+  --mainColor: #333333;
+  --gradientColor01: #333333;
+  --gradientColor02: #333333; /* #1E2233 */
+
+  /* Better Hljs */
+  --backgroundCode: #171717;
+  --backgroundName: rgba(0, 0, 0, 0.2);
+
+  /* Radial Status */
+  --rs-small-spacing: 2px;
+  --rs-large-spacing: 3px;
+  --rs-width: 2px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #43b581;
+  --rs-idle-color: #faa61a;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #643da7;
+  --rs-invisible-color: #747f8d;
+  --rs-phone-visible: block;
+  --rs-phone-color: var(--rs-online-color);
+}
+
+* {
+  font-family: "JetBrains Mono";
+}
+
+.chat-1-OBC7 {
+  background-color: var(--backgroundColor02);
+}
+
+.container-3i3IzO {
+  background-color: var(--backgroundColor01);
+}
+
+.attachWrapper-2TRKBi > button,/* le bouton d upload dams la barre de chat*/
+.expandable-9fI_e3, /* la description d un chanel dans la barre du haut*/
+.toolbar-1t6TWx > a, /* le point d interogation dans la barre du haut*/
+.scrollerBase-289Jih > div:nth-child(6), /* le bouton de recherche de serveu*/
+.iconContainer-1BBaeJ,/* les # et haut parleur dans les titre des channel*/
+.placeholder-37qJjk.fontSize16Padding-3Wk7zP,/* le ;essqge dans la barre de chat*/
+.toolbar-1t6TWx > div:nth-child(2),/* le bouton de notif dans  la barre du haut*/
+.toolbar-1t6TWx > div.search-36MZv-,/* le barre de recherche dans la barre du haut*/
+.alignStretch-DpGPf3 > div:nth-child(3) > svg,/* caption*/
+.alignStretch-DpGPf3 > div:nth-child(4) > svg,/* caption*/
+.alignCenter-1dQNNs > svg,/* caption*/
+.wordmarkWindows-2dq6rw.wordmark-2u86JB,/* logo discord*/
+.mentioned-xhSam7::before/* la petite bande de couleur sur les message mentione*/ {
+  display: none;
+}
+.winButtonClose-3Q8ZH5,/* boutton fermer */
+.winButtonMinMax-3RsPUg,/* boutton minimiser */
+.winButtonMinMax-3RsPUg/* boutton agrandir */ {
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 0px;
+  margin-right: 7px;
+  background-color: #ffffff;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.winButtonClose-3Q8ZH5:hover,/* boutton fermer */
+.winButtonMinMax-3RsPUg:hover,/* boutton minimiser */
+.winButtonMinMax-3RsPUg:hover/* boutton agrandir */ {
+  background-color: #ffffff;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.sidebar-1tnWFu, /* la barre des channels */
+.container-1eFtFS>nav /* la barre des serveur */ {
+  background-color: #181b28;
+  width: 15px;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.sidebar-1tnWFu:hover /* la barre des channels */ {
+  width: 250px;
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.container-1eFtFS>nav:hover  /* la barre des serveur */ {
+  background-color: #181b28;
+  width: 70px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.buttons-3JBrkn /* cache les icones GIf et emojies */ {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.buttons-3JBrkn:hover /* cache les icones GIf et emojies */ {
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.chat-2ZfjoI>section /* bar en haut du chat*/ {
+  transition: 0.3s;
+  opacity: 0;
+  height: 0px;
+}
+
+.chat-2ZfjoI>section:hover /* bar en haut du chat*/ {
+  transition: 0.3s;
+  opacity: 1;
+  height: 30px;
+}
+
+.content-1jQy2l>main>form /* bar de message*/ {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.content-1jQy2l>main>form:hover /* bar de message*/ {
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.content-yTz4x3 > main > form > div > div > div,
+.content-yTz4x3 > main > form > div > div,
+.positionedContainer-3LNR6L > div > div,
+.root-1gCeng,
+.embedFull-2tM8--,
+.button-38aScr,
+.content-1x5b-n,
+.barBase-1c2Rfb,
+.reaction-1hd86g,
+.mentioned-xhSam7,
+.primaryDark-3mSFDl,
+.userPopout-xaxa6l,
+.wrapper-2aW0bm,
+.content-1o0f9g {
+  border-radius: 0%;
+}
+
+.callContainer-HtHELf {
+  background-color: var(--backgroundColor02);
+}
